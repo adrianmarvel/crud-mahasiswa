@@ -52,8 +52,8 @@
                                     <td><?php echo $data['nim']?></td>
                                     <td><?php echo $data['jurusan']?></td>
                                     <td><?php echo $data['telp']?></td>
-                                    <td> <a href="config/delete.php?d=<?= $data['nim'] ?>">Hapus</a>
-                                    || <a href="edit.php?d=<?= $data['nim']?>">Edit</a></td>
+                                    <td> <a href="config/delete.php?d=<?= $data['id'] ?>">Hapus</a>
+                                    || <a href="edit.php?d=<?= $data['id']?>">Edit</a></td>
                                 </tr>
                             <?php } ?>
                     </table>

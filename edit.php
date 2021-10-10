@@ -12,7 +12,7 @@
     <?php 
         require_once 'config/koneksi.php';
         $d = $_GET['d'];
-        $con =  mysqli_query($koneksi, "SELECT * FROM biodata WHERE nim='$d'");
+        $con =  mysqli_query($koneksi, "SELECT * FROM biodata WHERE id='$d'");
         while ($data = mysqli_fetch_array($con))
         {
             ?>
@@ -23,6 +23,9 @@
                     <div class="col-12">
                         <h1>Edit Data Mahasiswa</h1>
                         <form class="formtambahdata" action="config/update.php" method="post">
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="id" value="<?php echo $data['id'] ?>">
+                            </div>
                             <div class="mb-3">
                                 <label>Nama</label>
                                 <input type="text" class="form-control" name="nama" value="<?php echo $data['nama'] ?>">
