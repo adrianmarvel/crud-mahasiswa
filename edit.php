@@ -24,7 +24,7 @@
                         <h1>Edit Data Mahasiswa</h1>
                         <form class="formtambahdata" action="config/update.php" method="post">
                             <div class="mb-3">
-                                <input type="number" class="form-control" name="id" value="<?php echo $data['id'] ?>">
+                                <input type="hidden" class="form-control" name="id" value="<?php echo $data['id'] ?>">
                             </div>
                             <div class="mb-3">
                                 <label>Nama</label>
