@@ -1,0 +1,17 @@
+.col-12{
+    margin-top: 80px;
+}
+
+.formtambahdata{
+    margin-top: 10px;
+}
+
+.tombol1{
+    position: relative;
+}
+.btn{
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    margin-top: 10px;
+}

@@ -7,7 +7,7 @@
     $jurusan = $_POST['jurusan'];
     $telp = $_POST['telp'];
 
-    $u = mysqli_query($koneksi, "UPDATE biodata SET nama='$nama', alamat='$alamat', nim='$nim', jurusan='$jurusan', telp='$telp'");
+    $u = mysqli_query($koneksi, "UPDATE biodata SET nama='$nama', alamat='$alamat', nim='$nim', jurusan='$jurusan', telp='$telp' where nim='$nim'");
     if ($u)
     {
         echo "<script>alert('Data berhasil di edit');window.location='../index.php'</script>";

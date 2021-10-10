@@ -19,21 +19,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link" href="#">Profile</a>
                     </li>
                 </ul>
                 </div>
@@ -45,7 +31,7 @@
                 <div class="col">
                 </div>
                 <div class="col-10">
-                    <button type="button" class="btn btn-primary" onclick="window.location.href='tambahdata.php';">Tambah Data</button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='tambahdata.php';">Tambah Data +</button>
                     <table class="table table-striped table-hover">
                         <tr class="table-primary">
                             <td>Nama</td>
@@ -66,8 +52,8 @@
                                     <td><?php echo $data['nim']?></td>
                                     <td><?php echo $data['jurusan']?></td>
                                     <td><?php echo $data['telp']?></td>
-                                    <td> <a href="config/delete.php?d=<?= $data['id'] ?>">Hapus</a>
-                                    || <a href="edit.php?d=<?= $data['id']?>">Edit</a></td>
+                                    <td> <a href="config/delete.php?d=<?= $data['nim'] ?>">Hapus</a>
+                                    || <a href="edit.php?d=<?= $data['nim']?>">Edit</a></td>
                                 </tr>
                             <?php } ?>
                     </table>
