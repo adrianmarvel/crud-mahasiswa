@@ -5,6 +5,7 @@
     $q1 = mysqli_query($koneksi, $sql1);
     while($r1 = mysqli_fetch_array($q1)){
         $hasil[] = array(
+            'id' => $r1['id'],
             'nama' => $r1['nama'],
             'alamat' => $r1['alamat'],
             'jurusan' => $r1['jurusan'],
